@@ -1,6 +1,6 @@
 #include <CL/cl.h>
 
-#define ARRAY_SIZE 5
+#define ARRAY_SIZE 1000
 
 cl_context CreateContext();
 cl_command_queue CreateCommandQueue( cl_context context, cl_device_id *device );

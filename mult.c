@@ -149,7 +149,6 @@ cl_program CreateProgram( cl_context context, cl_device_id device,
     return program;
 }
 
-
 int CreateMemObjects( cl_context context, cl_mem *memObjects, float *a, 
     float *b, int wa, int ha, int wb, int hb )
 {

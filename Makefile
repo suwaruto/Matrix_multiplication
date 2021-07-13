@@ -1,7 +1,7 @@
 CC = gcc
 LNK = gcc
 LNKFLAGS = -lOpenCL
-CCFLAGS = -g
+CCFLAGS = -g -D CL_TARGET_OPENCL_VERSION=300
 OBJ = main.o mult.o
 
 clean:   

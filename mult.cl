@@ -3,7 +3,7 @@ kernel void mult( global const float *a, global const float *b,
 {
     int row = get_global_id(0), col = get_global_id(1);
 
-    res[row * wa + col] = 0;
+    res[row * wb + col] = 0;
     for (int i = 0; i < wa; i++)
-        res[row * wa + col] += a[row * wa + i] * b[i * wa + col];
+        res[row * wb + col] += a[row * wa + i] * b[i * wb + col];
 }
